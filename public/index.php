@@ -6,7 +6,7 @@ if (isset($_GET['with_redirect']))
 	
 	if (isset($_GET['redirect_to']))
 	{
-		header('Location: ' . $_GET['redirect_to'] . true, $code);
+		header('Location: ' . $_GET['redirect_to'] , true, $code);
 		exit();
 	}
 	
