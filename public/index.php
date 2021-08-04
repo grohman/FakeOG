@@ -4,14 +4,15 @@ if (isset($_GET['with_redirect']))
 {
 	$code = isset($_GET['code']) ? $_GET['code'] : 302;
 	
+	if (isset($_GET['redirect_to']))
+	{
+		header('Location: ' . $_GET['redirect_to'] . true, $code);
+		exit();
+	}
+	
 	if (!isset($_GET['is_redirected']))
 	{
 		header('Location: index.php?with_redirect=true&is_redirected=' . mt_rand() , true, $code);
-		exit();
-	}
-	else if (isset($_GET['redirect_to']))
-	{
-		header('Location: ' . $_GET['redirect_to'] . true, $code);
 		exit();
 	}
 }
