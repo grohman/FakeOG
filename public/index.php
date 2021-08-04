@@ -5,6 +5,7 @@ if (isset($_GET['with_redirect']))
 	if (!isset($_GET['is_redirected']))
 	{
 		header('Location: index.php?with_redirect=true&is_redirected='.mt_rand());
+		exit();
 	}
 }
 
