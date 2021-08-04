@@ -34,6 +34,7 @@ $author = mb_strtolower($faker->lastName);
 
 	<meta name="image" property="og:image" content="<?= $image ?>">
 	<meta name="title" property="og:title" content="<?= $title ?>">
+	<meta name="author" content="@<?= $author ?>">
 
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="<?= $title ?>">
