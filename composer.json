@@ -1,0 +1,13 @@
+{
+    "name": "grohman/fakeog",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel Podrabinek",
+            "email": "dpodrabinek@oktopost.com"
+        }
+    ],
+    "require": {
+        "fzaninotto/faker": "^1.9"
+    }
+}
